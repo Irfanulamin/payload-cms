@@ -12,5 +12,9 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
+  upload: {
+    staticDir: 'media', // folder in your project root
+    mimeTypes: ['image/*', 'application/pdf'], // allow PDFs
+    adminThumbnail: 'thumbnail',
+  },
 }
